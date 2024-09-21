@@ -1,0 +1,39 @@
+/* General styles for the movie summary pages */
+body {
+    font-family: 'Arial', sans-serif; /* Default font for the body */
+    line-height: 1.6; /* Increase line height for readability */
+    background-color: #000000;  /*Color for Background is Black */
+}
+
+h1, h2, ol, ul {
+    text-align: center; /* Center align headings */
+    color: #FF4081; /* Pinkish color for headings */
+}
+
+hr {
+    border: 1px solid #FF4081; /* Pink line for horizontal rules */
+}
+
+a {
+    color: #1230AE; /* Blue color for links */
+    font-weight: bold; /* Bold links */
+}
+
+.image-container {
+     text-align: center; /*Image alignment is center */
+}
+    
+p {
+    font-family: 'Georgia', serif; /* Serif font for paragraphs */
+    font-size: 18px; /* Larger text size for better readability */
+    color: #ECDFCC; /* Dirty White color */
+    text-align: center; /*Paragraph Alignment is center */
+}
+
+ul, ol {
+    margin-left: 40px; /* Indent lists */
+}
+
+.link {
+     text-align: center; /*Link alignmet is center */
+}
