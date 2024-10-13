@@ -1,4 +1,10 @@
 /* General styles for the movie summary pages */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Arial', sans-serif; /* Default font for the body */
     line-height: 1.6; /* Increase line height for readability */
@@ -8,6 +14,9 @@ body {
 h1, h2, ol, ul {
     text-align: center; /* Center align headings */
     color: #FF4081; /* Pinkish color for headings */
+}
+h1:hover{
+    color: aquamarine;
 }
 
 hr {
@@ -22,7 +31,7 @@ a {
 .image-container {
      text-align: center; /*Image alignment is center */
 }
-    
+
 p {
     font-family: 'Georgia', serif; /* Serif font for paragraphs */
     font-size: 18px; /* Larger text size for better readability */
@@ -32,8 +41,28 @@ p {
 
 ul, ol {
     margin-left: 40px; /* Indent lists */
+    list-style-position: inside;
 }
 
 .link {
      text-align: center; /*Link alignmet is center */
+
+    }
+a:hover {
+    color: lightyellow; /*Link Color is whend hovered*/
+}
+
+h2[draggable]:hover {
+    color: aquamarine; /*Special mention for hover color*/
+}
+
+.img {
+    border: 5px solid #FF4081;
+    }
+
+.body {
+    border: 5px solid #FF4081;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
