@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #1c1c1c;
+    color: #C8FFE0;
+    padding: 50px;
+}
+
+.body {
+    padding: 20px;
+    border: 3px solid gold;
+    background-color: #2e2e2e;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: gold;
+}
+
+h1:hover {
+    color: aquamarine;
+}
+
+.cast-container {
+    text-align: center; /* Center align the cast members */
+}
+
+.cast-member {
+    display: inline-block; /* Inline-block for side-by-side display */
+    width: 28%; /* Adjust width to fit three members in a row */
+    margin: 1%; /* Add margin for spacing */
+    position: relative; /* Position relative for text alignment */
+}
+
+img {
+    display: block; /* Ensure images are block-level elements for better alignment */
+    width: 100%; /* Makes images responsive */
+    max-height: 200px; /* Limit max height for uniformity */
+    border-radius: 10px; /* Keep border-radius for rounded corners */
+}
+
+h2 {
+    font-size: 18px; /* Set a consistent font size */
+    margin-top: 5px; /* Space above the character name */
+}
+
+p {
+    font-family: 'Georgia', serif;
+    font-size: 14px; /* Font size for descriptions */
+    color: #C8FFE0;
+    margin: 5px 0 0; /* Add margin for spacing above the description */
+    text-align: center; /* Center the text */
+}
+.link {
+    text-align: center;
+}
+a, button {
+    color: #FFFFFF; /* Button text color */
+    background-color: goldenrod; /* Button background color */
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+button:hover, a:hover {
+    background-color: lightyellow; /* Hover effect for buttons */
+    color: black;
+}

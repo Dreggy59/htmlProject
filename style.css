@@ -1,4 +1,3 @@
-/* General styles for the movie summary pages */
 * {
     margin: 0;
     padding: 0;
@@ -6,63 +5,73 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif; /* Default font for the body */
-    line-height: 1.6; /* Increase line height for readability */
-    background-color: #000000;  /*Color for Background is Black */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #1c1c1c; /* Dark background to */
+    color: #FFC6C6;
+    padding: 50px; /* Add padding around the page to create space around the content box */
 }
 
-h1, h2, ol, ul {
-    text-align: center; /* Center align headings */
-    color: #FF4081; /* Pinkish color for headings */
+.body {
+    padding: 20px; /* Add padding inside the box */
+    border: 3px solid gold; /* Gold border around the content */
+    background-color: #2e2e2e; /* Slightly lighter background for the content box */
+    border-radius: 10px;
+    margin: auto; /* Center the box */
 }
-h1:hover{
+
+h1, h2, h3, ol, ul {
+    text-align: center;
+    color: gold; 
+}
+
+h1:hover {
     color: aquamarine;
 }
 
 hr {
-    border: 1px solid #FF4081; /* Pink line for horizontal rules */
-}
-
-a {
-    color: #1230AE; /* Blue color for links */
-    font-weight: bold; /* Bold links */
-}
-
-.image-container {
-     text-align: center; /*Image alignment is center */
+    border: 1px solid gold; 
 }
 
 p {
-    font-family: 'Georgia', serif; /* Serif font for paragraphs */
-    font-size: 18px; /* Larger text size for better readability */
-    color: #ECDFCC; /* Dirty White color */
-    text-align: center; /*Paragraph Alignment is center */
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.image-container {
+    text-align: center;
+
 }
 
 ul, ol {
-    margin-left: 40px; /* Indent lists */
+    margin-left: 40px;
     list-style-position: inside;
 }
 
 .link {
-     text-align: center; /*Link alignmet is center */
+    text-align: center;
+}
 
-    }
-a:hover {
-    color: lightyellow; /*Link Color is whend hovered*/
+a, button {
+    color: #FFFFFF; /* Button text color */
+    background-color: goldenrod; /* Button background color */
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+button:hover, a:hover {
+    background-color: lightyellow; /* Hover effect for buttons */
+    color: black;
 }
 
 h2[draggable]:hover {
-    color: aquamarine; /*Special mention for hover color*/
+    color: aquamarine;
 }
-
-.img {
-    border: 5px solid #FF4081;
-    }
-
-.body {
-    border: 5px solid #FF4081;
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
+.img1 {
+    border-radius: 25px;
 }
