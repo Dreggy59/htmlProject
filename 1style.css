@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -29,41 +28,52 @@ h1:hover {
 }
 
 .cast-container {
-    text-align: center; /* Center align the cast members */
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of rows */
+    justify-content: space-evenly; /* Spacing between items */
+    gap: 15px;
+    padding: 10px;
 }
 
 .cast-member {
-    display: inline-block; /* Inline-block for side-by-side display */
-    width: 28%; /* Adjust width to fit three members in a row */
-    margin: 1%; /* Add margin for spacing */
-    position: relative; /* Position relative for text alignment */
+    width: 30%; /* Allows for 3 items per row */
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s; /* Smooth hover transition */
+}
+
+.cast-member:hover {
+    transform: scale(1.05); /* Slight scale-up effect on hover */
 }
 
 img {
-    display: block; /* Ensure images are block-level elements for better alignment */
-    width: 100%; /* Makes images responsive */
-    max-height: 200px; /* Limit max height for uniformity */
-    border-radius: 10px; /* Keep border-radius for rounded corners */
+    width: 100%; /* Ensures images cover the container */
+    height: auto; /* Maintains image ratio */
+    border-radius: 10px;
 }
 
 h2 {
-    font-size: 18px; /* Set a consistent font size */
-    margin-top: 5px; /* Space above the character name */
+    font-size: 18px;
+    margin-top: 10px;
+    color: gold;
 }
 
 p {
     font-family: 'Georgia', serif;
-    font-size: 14px; /* Font size for descriptions */
+    font-size: 14px;
     color: #C8FFE0;
-    margin: 5px 0 0; /* Add margin for spacing above the description */
-    text-align: center; /* Center the text */
 }
+
 .link {
     text-align: center;
+    margin-top: 20px;
 }
-a, button {
-    color: #FFFFFF; /* Button text color */
-    background-color: goldenrod; /* Button background color */
+
+button {
+    color: #FFFFFF;
+    background-color: goldenrod;
     border: none;
     padding: 10px;
     font-weight: bold;
@@ -71,7 +81,8 @@ a, button {
     border-radius: 5px;
     margin: 5px 0;
 }
-button:hover, a:hover {
-    background-color: lightyellow; /* Hover effect for buttons */
+
+button:hover {
+    background-color: lightyellow;
     color: black;
 }

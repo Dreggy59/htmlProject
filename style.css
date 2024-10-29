@@ -1,61 +1,65 @@
+/* Global styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #1c1c1c; /* Dark background to */
-    color: #FFC6C6;
-    padding: 50px; /* Add padding around the page to create space around the content box */
+    background-color: #1c1c1c; /* Dark background */
+    color: #C8FFE0; /* Light text for contrast */
+    padding: 50px; /* Padding around content */
 }
-
+/* Main content styling */
 .body {
-    padding: 20px; /* Add padding inside the box */
-    border: 3px solid gold; /* Gold border around the content */
-    background-color: #2e2e2e; /* Slightly lighter background for the content box */
+    padding: 20px; /* Inner padding */
+    border: 3px solid gold; /* Gold border */
+    background-color: #2e2e2e; /* Slightly lighter background */
     border-radius: 10px;
     margin: auto; /* Center the box */
 }
 
+/* Headings */
 h1, h2, h3, ol, ul {
     text-align: center;
     color: gold; 
 }
 
 h1:hover {
-    color: aquamarine;
+    color: aquamarine; /* Hover effect */
 }
 
 hr {
     border: 1px solid gold; 
 }
 
+/* Paragraph styling */
 p {
     font-family: 'Georgia', serif;
     font-size: 18px;
     text-align: center;
 }
 
+/* Image container */
 .image-container {
     text-align: center;
-
 }
 
+/* List styles */
 ul, ol {
     margin-left: 40px;
     list-style-position: inside;
 }
 
+/* Link and button styling */
 .link {
     text-align: center;
 }
 
 a, button {
     color: #FFFFFF; /* Button text color */
-    background-color: goldenrod; /* Button background color */
+    background-color: goldenrod; /* Button background */
     border: none;
     padding: 10px;
     font-weight: bold;
@@ -70,8 +74,60 @@ button:hover, a:hover {
 }
 
 h2[draggable]:hover {
-    color: aquamarine;
+    color: aquamarine; /* Hover effect for draggable h2 */
 }
+
 .img1 {
-    border-radius: 25px;
+    border-radius: 25px; /* Rounded corners for images */
+}
+
+/* About Me page specific styles */
+.about-container {
+    width: 70%; /* Wider for better layout */
+    margin: 50px auto; /* Center the container */
+    padding: 20px;
+    border: 2px solid gold; /* Gold border */
+    background-color: #2e2e2e; /* Consistent background */
+    color: #ECDFCC; /* Text color */
+    text-align: left; /* Align text to the left for a professional look */
+    border-radius: 10px;
+}
+
+.about-content {
+    font-size: 18px; /* Font size for content */
+    line-height: 1.8; /* Line height for readability */
+    color: gold; /* Color for content */
+}
+
+/* Button container for About Me page */
+.button-container {
+    margin-top: 20px; /* Space above buttons */
+}
+
+/* Cast container styles */
+.cast-container {
+    text-align: center; /* Center align the cast members */
+}
+
+.cast-member {
+    display: inline-block; /* Side-by-side display */
+    width: 28%; /* Adjust width to fit three members in a row */
+    margin: 1%; /* Margin for spacing */
+    position: relative; /* Position relative for text alignment */
+}
+
+.cast-member img {
+    display: block; /* Block-level for better alignment */
+    width: 100%; /* Responsive images */
+    max-height: 200px; /* Limit max height */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Specific styles for interactive image hover effects */
+.death:hover {
+    content: url(irondeath.jpg); /* Change image on hover */
+}
+
+.assemble:hover {
+    content: url(gifFight.gif); /* Change image on hover */
 }
